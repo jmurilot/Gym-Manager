@@ -4,6 +4,7 @@ const nunjucks = require('nunjucks')
 const routes = require('./routes')
 
 
+server.use(express.urlencoded({extended: true}))
 server.set("view engine", "njk")
 server.use(express.static('public'))
 server.use(routes)
