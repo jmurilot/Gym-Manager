@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "avatar_url": "https://yandex.com",
+      "name": "Grasiela",
+      "birth": 319766400000,
+      "gender": "F",
+      "services": "Zumba",
+      "created_at": 1584902513523,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://google.com",
+      "name": "Jose Murilo",
+      "birth": 538358400000,
+      "gender": "M",
+      "services": "Crossfit",
+      "created_at": 1584902648728
+    }
+  ]
+}
