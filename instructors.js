@@ -40,3 +40,16 @@ let {avatar_url, name, birth, gender, services} = req.body
    
 
 }
+
+exports.show = function(req, res) {
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function(instructor){
+        return instructor.id == id
+
+    })
+
+    if (!foundInstructor) return res.send("Instructor not Found!!!")
+
+    return res.send(foundInstructor)
+}
