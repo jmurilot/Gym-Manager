@@ -1,9 +1,10 @@
 const fs = require('fs')
-const data = require('./data.json')
+const data = require("./data.json")
 
 exports.post = function (req, res) {
    
     const keys = Object.keys(req.body)
+    
 
     for(key of keys) {
         if (req.body[key] == "") {
@@ -45,11 +46,18 @@ exports.show = function(req, res) {
     const { id } = req.params
 
     const foundInstructor = data.instructors.find(function(instructor){
-        return instructor.id == id
+        return id == instructor.id
 
     })
 
     if (!foundInstructor) return res.send("Instructor not Found!!!")
 
-    return res.render('./instructors/show', {instructor: foundInstructor})
+    const instructor = {
+        ...foundInstructor,
+        age: "",
+        services: foundInstructor.services.split(","),
+        created_at: ""
+    }
+
+    return res.render('./instructors/show', {instructor})
 }
