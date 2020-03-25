@@ -2,21 +2,12 @@
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "http://yandex.com",
-      "name": "Grasiela",
-      "birth": 319766400000,
-      "gender": "F",
-      "services": "Zumba,dance,Cardio",
-      "created_at": 1584905969649
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://bing.com",
-      "name": "Jose",
+      "avatar_url": "https://google.com.br",
+      "name": "Jose Murilo",
       "birth": 538358400000,
       "gender": "M",
-      "services": "Hipertrofia,Crossfit,Cardio",
-      "created_at": 1584916007474
+      "services": "Crossfit,Natação",
+      "created_at": 1585103874653
     }
   ]
 }
